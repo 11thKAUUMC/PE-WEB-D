@@ -1,0 +1,13 @@
+INSERT INTO member (email,password,nickname,created_at,updated_at) VALUES ('movie@example.com','demo-only','영화팬',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,100,1,'데모 감상 1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,101,2,'데모 감상 2',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,102,3,'데모 감상 3',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,103,4,'데모 감상 4',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,104,5,'데모 감상 5',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,105,1,'데모 감상 6',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,106,2,'데모 감상 7',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,107,3,'데모 감상 8',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,108,4,'데모 감상 9',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,109,5,'데모 감상 10',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,110,1,'데모 감상 11',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO rating (member_id,movie_id,score,comment,created_at,updated_at) VALUES (1,111,2,'데모 감상 12',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
