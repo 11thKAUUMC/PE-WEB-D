@@ -35,12 +35,6 @@ public class MovieRecordService {
                     "이미 이 영화에 평점을 남기셨습니다.");
         }
 
-        if (request.addToFavorites()
-                && favoriteRepository.existsByMember_MemberIdAndMovieId(memberId, request.movieId())) {
-            throw new ApiException(HttpStatus.CONFLICT, "FAVORITE409_1",
-                    "이미 이 영화를 즐겨찾기하셨습니다.");
-        }
-
         Rating rating = Rating.builder()
                 .member(member)
                 .movieId(request.movieId())
@@ -51,6 +45,10 @@ public class MovieRecordService {
 
         FavoriteResponse favoriteResponse = null;
         if (request.addToFavorites()) {
+            if (favoriteRepository.existsByMember_MemberIdAndMovieId(memberId, request.movieId())) {
+                throw new ApiException(HttpStatus.CONFLICT, "FAVORITE409_1",
+                        "이미 이 영화를 즐겨찾기하셨습니다.");
+            }
             Favorite favorite = Favorite.builder()
                     .member(member)
                     .movieId(request.movieId())
